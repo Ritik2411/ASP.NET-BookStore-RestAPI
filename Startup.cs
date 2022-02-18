@@ -1,4 +1,5 @@
 using System;
+using AutoMapper;
 using BookStoreAPI.Context;
 using BookStoreAPI.Repository;
 using Microsoft.AspNetCore.Builder;
@@ -29,6 +30,7 @@ namespace BookStoreAPI
             services.AddControllers().AddNewtonsoftJson();
             services.AddTransient<IBookStore, BookStoreRepository>();
             services.AddDbContext<BookStoreContext>(options => options.UseMySql(Configuration.GetConnectionString("Mysql"),serverVersion));
+            services.AddAutoMapper(typeof(Startup));
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "BookStoreAPI", Version = "v1" });

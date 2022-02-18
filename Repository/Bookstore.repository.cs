@@ -5,12 +5,15 @@ using BookStoreAPI.Models;
 using Microsoft.EntityFrameworkCore;
 using System.Linq;
 using Microsoft.AspNetCore.JsonPatch;
+using AutoMapper;
 
 namespace BookStoreAPI.Repository{
     public class BookStoreRepository : IBookStore{
         private readonly BookStoreContext _context;
-        public BookStoreRepository(BookStoreContext context){
+        private readonly IMapper _mapper;
+        public BookStoreRepository(BookStoreContext context, IMapper mapper){
             _context = context;
+            _mapper = mapper;
         }
 
         public async Task<List<BookstoreModel>> GetAllBooksAsync(){
@@ -24,13 +27,16 @@ namespace BookStoreAPI.Repository{
         }
 
         public async Task<BookstoreModel> GetBooksByIdAsync(int id){
-            var records = await _context.Books.Where(x => x.Id == id).Select(x => new BookstoreModel(){
-                Id = x.Id,
-                Title = x.Title,
-                Description = x.Description
-            }).FirstOrDefaultAsync();
+            // var records = await _context.Books.Where(x => x.Id == id).Select(x => new BookstoreModel(){
+            //     Id = x.Id,
+            //     Title = x.Title,
+            //     Description = x.Description
+            // }).FirstOrDefaultAsync();
 
-            return records;
+            // return records;
+
+            var books = await _context.Books.FindAsync(id);
+            return _mapper.Map<BookstoreModel>(books);
         }
 
         public async Task<int> AddBookAsync(BookstoreModel bookstoreModel){

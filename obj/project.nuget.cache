@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "tJ9/Eu21iNgBLyTY7ejiiAtjua0/uR+gvh9ZIJ3DjREKqDsFBzV0P3tXkg6tqGNcuzapx8Ztq3x+OB+MuvjwjA==",
+  "dgSpecHash": "SPsWijzp9ynh37j37siVw2AwiekYm9o/YlNKVSUFv8yL7JxXF9LE0IZKLVxuQv4mF7sXNgmCsNEJ8M1wfYDw9w==",
   "success": true,
   "projectFilePath": "D:\\ASP.NET 5\\BookStoreAPI\\BookStoreAPI.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\ritiks\\.nuget\\packages\\automapper\\7.0.1\\automapper.7.0.1.nupkg.sha512",
+    "C:\\Users\\ritiks\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\5.0.1\\automapper.extensions.microsoft.dependencyinjection.5.0.1.nupkg.sha512",
     "C:\\Users\\ritiks\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\ritiks\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\5.0.0\\microsoft.aspnetcore.jsonpatch.5.0.0.nupkg.sha512",
     "C:\\Users\\ritiks\\.nuget\\packages\\microsoft.aspnetcore.mvc.newtonsoftjson\\5.0.0\\microsoft.aspnetcore.mvc.newtonsoftjson.5.0.0.nupkg.sha512",
@@ -35,7 +37,8 @@
     "C:\\Users\\ritiks\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\5.6.3\\swashbuckle.aspnetcore.swaggerui.5.6.3.nupkg.sha512",
     "C:\\Users\\ritiks\\.nuget\\packages\\system.collections.immutable\\5.0.0\\system.collections.immutable.5.0.0.nupkg.sha512",
     "C:\\Users\\ritiks\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512",
-    "C:\\Users\\ritiks\\.nuget\\packages\\system.diagnostics.diagnosticsource\\5.0.0\\system.diagnostics.diagnosticsource.5.0.0.nupkg.sha512"
+    "C:\\Users\\ritiks\\.nuget\\packages\\system.diagnostics.diagnosticsource\\5.0.0\\system.diagnostics.diagnosticsource.5.0.0.nupkg.sha512",
+    "C:\\Users\\ritiks\\.nuget\\packages\\system.valuetuple\\4.5.0\\system.valuetuple.4.5.0.nupkg.sha512"
   ],
   "logs": []
 }
