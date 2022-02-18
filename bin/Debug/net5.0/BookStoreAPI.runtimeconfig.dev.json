@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\ritiks\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\ritiks\\.nuget\\packages"
+    ]
+  }
+}
